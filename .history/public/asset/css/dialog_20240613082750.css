@@ -1,0 +1,47 @@
+.notification {
+    width: 550px;
+    box-shadow: 0 1px 5px #e53282;
+    background: white;
+    position: absolute;
+    z-index: 3 !important;
+    padding: 14px 0 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: -30px;
+  }
+  .title_notify{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  .vector-icon{
+    width: 35px;
+    height: 35px;
+    padding: 0px !important;
+  }
+  .icon_sorry{
+    width: 60px;
+    height: 60px;
+  }
+
+  .content_notify {
+    align-items: center;
+    justify-content: center;
+  }
+
+.ok-wrapper{
+  width: fit-content;
+  height: fit-content;
+  background: #e53282;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.ok{
+  margin: 0px 30px;
+}
