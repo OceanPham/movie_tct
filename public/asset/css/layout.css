@@ -71,7 +71,7 @@ header{
     line-height: 18.1px;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
-  
+
 .nav-bar{
     font-weight: 500;
     font-size: 20px;
@@ -128,7 +128,7 @@ header{
     transition: transform 0.3s;
 }
 
-.img_m, .btn {
+.img_m, .btn_buy {
     transition: transform 0.3s ease;
 }
 
@@ -136,20 +136,20 @@ header{
     transform: scale(1.05);
 }
 
-.btn img {
+.btn_buy img {
     transition: transform 0.3s ease, opacity 0.5s ease;
 }
 
-.btn:hover img {
+.btn_buy:hover img {
     transform: scale(1.05); /* Phóng to ảnh */
     opacity: 0; /* Ẩn ảnh hiện tại để hiển thị ảnh mới */
 }
 
-.btn {
+.btn_buy {
     position: relative;
 }
 
-.btn::before {
+.btn_buy::before {
     content: '';
     position: absolute;
     top: 0;
@@ -166,7 +166,7 @@ header{
     border-radius: 10px;
 }
 
-.btn:hover::before {
+.btn_buy:hover::before {
     opacity: 1; /* Hiển thị ảnh khi hover */
 }
 .button_buy{

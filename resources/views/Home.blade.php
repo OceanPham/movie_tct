@@ -58,13 +58,14 @@
             <div class="name_movie text-center fw-bold mb-2">
                 <p>{{ $movie->name }}</p>
             </div>
-            <button class="btn">
+            <button class="btn_buy" onclick="location.href='{{ route('showtime') }}'">
                 <img class="button_buy" src="{{ asset('image/btn_buy.png') }}" alt="{{ $movie->name }}">
             </button>
         </div>
         @endif
     @endforeach
 </div>
+
 
 <div class="title text-center pt-5 fs-1 fw-bold border-top">
     <p class="title_1">Phim sắp chiếu</p>

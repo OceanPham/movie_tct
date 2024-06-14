@@ -19,3 +19,6 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::resource('movie', MovieController::class);
 Route::resource('/', MovieController::class);
+Route::get('/showtime', function () {
+    return view('ticketLayouts.showtime');
+})->name('showtime');
