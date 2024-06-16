@@ -22,6 +22,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa Slab One:wght@400&display=swap" />
     <link href="{{ asset('asset/css/layout.css') }}" rel="stylesheet" />
     <link href="{{ asset('asset/css/main.css') }}" rel="stylesheet" />
+    <link href="{{ asset('asset/css/rule.css') }}" rel="stylesheet" />
+    <link href="{{ asset('asset/css/paymentmethod.css') }}" rel="stylesheet" />
+    <link href="{{ asset('asset/css/cardinformation.css') }}" rel="stylesheet" />
+    <link href="{{ asset('asset/css/bank.css') }}" rel="stylesheet" />
     <link href="{{ asset('asset/css/media-screen.css') }}" rel="stylesheet" />
     <link href="{{ asset('asset/css/user-index.css') }}" rel="stylesheet" />
     @yield('link')
@@ -73,6 +77,7 @@
     @yield('banner')
     @yield('main')
 
+
     <footer class="footer">
         <div class="footer_infor d-flex justify-content-between">
             <div class="chm-sc-khch-hng-parent">
@@ -109,6 +114,7 @@
             carousel.next();
         }, 2000);
     </script>
+    @yield('scripts')
 
 </body>
 

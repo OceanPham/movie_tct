@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\BankController;
+use App\Http\Controllers\CardInformationController;
 use App\Http\Controllers\MovieController;
+use App\Http\Controllers\PaymentmethodController;
+use App\Http\Controllers\RuleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +23,7 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::resource('movie', MovieController::class);
 Route::resource('/', MovieController::class);
+Route::resource('rule', RuleController::class);
+Route::resource('paymentmethod', PaymentmethodController::class);
+Route::resource('bank', BankController::class);
+Route::get('/cardinformation', [BankController::class, 'cardInformation'])->name('pay.cardinformation');
