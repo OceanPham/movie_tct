@@ -26,3 +26,8 @@ Route::get('/showtime', function () {
 Route::get('/seat', function () {
     return view('ticketLayouts.seatOrder');
 })->name('seat');
+
+Route::get('/food', function () {
+    return view('ticketLayouts.food');
+})->name('food');
+

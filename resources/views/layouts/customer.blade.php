@@ -33,6 +33,8 @@
     <link href="{{ asset('asset/css/media-screen.css') }}" rel="stylesheet">
     <link href="{{ asset('asset/css/user-index.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('asset/css/seatOrder.css') }}">
+    <link rel="stylesheet" href="{{ asset('asset/css/food.css') }}">
+
 
     @yield('link')
 </head>
@@ -120,6 +122,8 @@
             carousel.next();
         }, 2000);
     </script>
+    @yield('scripts')
+
 
 </body>
 

@@ -12,6 +12,7 @@
             margin: 0;
             padding: 0;
             height: 100%;
+            background-image: url(image/tc.png);
         }
     </style>
 </head>
@@ -73,43 +74,43 @@
                 <span class="horizontal-line"></span>
                 <div class="mt-4 d-flex flex-wrap">
                     <div class="time-btn">
-                        <button style="padding: 5px 40px" class="btn time-btn active">08:30</button>
+                        <button style="padding: 5px 40px" class="btn time-btn active" onclick="window.location.href = 'seat';">08:30</button>
                         <p style="color: #ABAAAA" class="empty mt-1 text-center">90/92</p>
                     </div>
                     <div class="time-btn">
-                        <button style="padding: 5px 40px" class="btn time-btn active">10:20</button>
+                        <button style="padding: 5px 40px" class="btn time-btn active" onclick="window.location.href = 'seat';">10:20</button>
                         <p style="color: #ABAAAA" class="mt-1 text-center">90/92</p>
                     </div>
                     <div class="time-btn">
-                        <button style="padding: 5px 40px" class="btn time-btn active">11:30</button>
+                        <button style="padding: 5px 40px" class="btn time-btn active" onclick="window.location.href = 'seat';">11:30</button>
                         <p style="color: #ABAAAA" class="mt-1 text-center">90/92</p>
                     </div>
                     <div class="time-btn">
-                        <button style="padding: 5px 40px" class="btn time-btn active">13:00</button>
+                        <button style="padding: 5px 40px" class="btn time-btn active" onclick="window.location.href = 'seat';">13:00</button>
                         <p style="color: #ABAAAA" class="mt-1 text-center">90/92</p>
                     </div>
                     <div class="time-btn">
-                        <button style="padding: 5px 40px" class="btn time-btn active">14:05</button>
+                        <button style="padding: 5px 40px" class="btn time-btn active" onclick="window.location.href = 'seat';">14:05</button>
                         <p style="color: #ABAAAA" class="mt-1 text-center">90/92</p>
                     </div>
                     <div class="time-btn">
-                        <button style="padding: 5px 40px" class="btn time-btn active">16:40</button>
+                        <button style="padding: 5px 40px" class="btn time-btn active" onclick="window.location.href = 'seat';">16:40</button>
                         <p style="color: #ABAAAA" class="mt-1 text-center">90/92</p>
                     </div>
                     <div class="time-btn">
-                        <button style="padding: 5px 40px" class="btn time-btn active">18:50</button>
+                        <button style="padding: 5px 40px" class="btn time-btn active" onclick="window.location.href = 'seat';">18:50</button>
                         <p style="color: #ABAAAA" class="mt-1 text-center">90/92</p>
                     </div>
                     <div class="time-btn">
-                        <button style="padding: 5px 40px" class="btn time-btn active">20:35</button>
+                        <button style="padding: 5px 40px" class="btn time-btn active" onclick="window.location.href = 'seat';">20:35</button>
                         <p style="color: #ABAAAA" class="mt-1 text-center">90/92</p>
                     </div>
                     <div class="time-btn">
-                        <button style="padding: 5px 40px" class="btn time-btn active">21:50</button>
+                        <button style="padding: 5px 40px" class="btn time-btn active" onclick="window.location.href = 'seat';">21:50</button>
                         <p style="color: #ABAAAA" class="mt-1 text-center">90/92</p>
                     </div>
                     <div class="time-btn">
-                        <button style="padding: 5px 40px" class="btn time-btn active">22:10</button>
+                        <button style="padding: 5px 40px" class="btn time-btn active" onclick="window.location.href = 'seat';">22:10</button>
                         <p style="color: #ABAAAA" class="mt-1 text-center">90/92</p>
                     </div>
                 </div>
