@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+  }
+
+  .seating-chart {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .section-header {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .seating-rows {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .seating-rows .row {
+    display: contents;
+  }
+
+  .seating-rows .seat {
+    width: 30px;
+    height: 30px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .seating-rows .seat.available {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .movie-info {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .movie-info img {
+    width: 100px;
+    height: 150px;
+    margin-right: 20px;
+  }
+
+  .movie-info .movie-details h3 {
+    margin-bottom: 10px;
+  }
+
+  .movie-info .movie-details p {
+    margin-bottom: 5px;
+  }

@@ -128,7 +128,7 @@ header{
     transition: transform 0.3s;
 }
 
-.img_m, .btn_buy {
+.img_m, .btn.btn_buy {
     transition: transform 0.3s ease;
 }
 
@@ -136,20 +136,20 @@ header{
     transform: scale(1.05);
 }
 
-.btn_buy img {
+.btn.btn_buy img {
     transition: transform 0.3s ease, opacity 0.5s ease;
 }
 
-.btn_buy:hover img {
+.btn.btn_buy:hover img {
     transform: scale(1.05); /* Phóng to ảnh */
     opacity: 0; /* Ẩn ảnh hiện tại để hiển thị ảnh mới */
 }
 
-.btn_buy {
+.btn.btn_buy {
     position: relative;
 }
 
-.btn_buy::before {
+.btn.btn_buy::before {
     content: '';
     position: absolute;
     top: 0;
@@ -166,7 +166,7 @@ header{
     border-radius: 10px;
 }
 
-.btn_buy:hover::before {
+.btn.btn_buy:hover::before {
     opacity: 1; /* Hiển thị ảnh khi hover */
 }
 .button_buy{

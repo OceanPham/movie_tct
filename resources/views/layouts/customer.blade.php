@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang="vi">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <base href="/">
+    <meta name="google-site-verification" content="">
 
-    <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, shrink-to-fit=no, user-scalable=no" />
+    <title>TCT Cinema - Biểu đồ chỗ ngồi và thông tin phim</title>
 
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="format-detection" content="telephone=no" />
-    <base href="" />
-    <meta name="google-site-verification" content="" />
-
-
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aclonica:wght@400&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa Slab One:wght@400&display=swap" />
-    <link href="{{ asset('asset/css/layout.css') }}" rel="stylesheet" />
-    <link href="{{ asset('asset/css/main.css') }}" rel="stylesheet" />
-    <link href="{{ asset('asset/css/media-screen.css') }}" rel="stylesheet" />
-    <link href="{{ asset('asset/css/user-index.css') }}" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aclonica:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa Slab One:wght@400&display=swap">
+
+    <!-- Custom CSS -->
+    <link href="{{ asset('asset/css/layout.css') }}" rel="stylesheet">
+    <link href="{{ asset('asset/css/main.css') }}" rel="stylesheet">
+    <link href="{{ asset('asset/css/media-screen.css') }}" rel="stylesheet">
+    <link href="{{ asset('asset/css/user-index.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('asset/css/seatOrder.css') }}">
+
     @yield('link')
 </head>
+
 
 <body>
     <header>

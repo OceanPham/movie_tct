@@ -58,7 +58,7 @@
             <div class="name_movie text-center fw-bold mb-2">
                 <p>{{ $movie->name }}</p>
             </div>
-            <button class="btn_buy" onclick="location.href='{{ route('showtime') }}'">
+            <button class="btn btn_buy" onclick="location.href='{{ route('showtime') }}'">
                 <img class="button_buy" src="{{ asset('image/btn_buy.png') }}" alt="{{ $movie->name }}">
             </button>
         </div>
