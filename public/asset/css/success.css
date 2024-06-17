@@ -1,14 +1,4 @@
-/* Phông mờ */
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(88, 87, 87, 0.5);
-    z-index: 1000;
-}
+
 
 .line-separator {
     height: 1px;
@@ -20,12 +10,14 @@
 }
 
 .tick {
-    margin-left: 280px;
+    margin-left: 290px;
     padding-bottom: 10px;
+    margin-top: -20px;
 }
 
 .quaylai {
     margin-bottom: 50px !important;
+
 }
 
 .custom-col-4 {
@@ -55,4 +47,9 @@
 
 .mb-3 {
     margin-bottom: 30px; /* Set margin bottom to 10px */
+}
+
+.hehe {
+    font-size: 20px;
+    padding-top: 20px;
 }

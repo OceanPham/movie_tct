@@ -72,11 +72,11 @@
                     </div>
                 </div>
                 <div class="row mb-3"> <!-- Added mb-3 class -->
-                    <div class="col-4 custom-col-4">
+                    <div class="col-6 custom-col-4">
                         <div class="font-bold">Bắp - Nước:</div>
-                        <div class="font-bold" style ="color: black;">1x Combo lẻ</div>
+                        <div class="font-bold" style ="color: black;">1x Combo gia đình</div>
                     </div>
-                    <div class="col-8 custom-col-8 text-end">
+                    <div class="col-6 custom-col-8 text-end">
                         <div class="font-bold">250,000đ</div>
                     </div>
                 </div>
@@ -92,8 +92,8 @@
             </div>
         </div>
         <div class="col-6 d-flex flex-column align-items-center justify-content-center gap-2">
-            <img src="{{ asset('image/qr.jpeg') }}" alt="QR Code" width="200">
-            <div class="w-75 text-center">Mã QR được sử dụng để quét mã vé tại rạp</div>
+            <img src="{{ asset('image/qr.jpeg') }}" alt="QR Code" width="200" >
+            <div class="w-75 text-center hehe">Mã QR được sử dụng để quét mã vé tại rạp</div>
         </div>
     </div>
 </div>

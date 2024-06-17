@@ -29,11 +29,87 @@
                     <p class="p6">Rạp chiếu phim TCT</p>
                 </div>
             </div>
-            <div class="column col-4 box_right d-flex flex-column align-items-center justify-content-center">
+            <div class="column col-4 box_right d-flex flex-column align-items-center justify-content-center qr">
                 <h4 class="text-center mb-4">Quét mã qua ứng dụng ngân hàng / ví điện tử</h4>
-                <img src="{{ asset('image/qr-code.png') }}" alt="QR Code">
+                <img src="{{ asset('image/qr-code.png') }}" alt="QR Code" onclick="location.href='success'">
             </div>         
         </div>
     </div>
 </div>
+<div class="overlay" id="overlay"></div>
+
+<div class="modal" id="backModal">
+    <div class="modal-content">
+        <div class="header-modal">
+            <h4>Xác nhận</h4>
+            <i class="bi bi-x-circle" id="closeBackModal"></i>
+        </div>
+        
+        <div class="content d-flex align-items-center">
+            <i class="bi bi-question-circle-fill"></i>
+            <p>Bạn xác nhận hủy bỏ phiên giao dịch này ?</p>
+        </div>
+        
+        <div class="modal-buttons">
+            <button id="cancelBackBtn">Hủy</button>
+            <button id="confirmBackBtn">Xác nhận</button>
+            <button id="closeBackBtn">Đóng</button>
+        </div>
+    </div>
+</div>
 @endsection
+
+@section('scripts')
+<script>
+    document.addEventListener('DOMContentLoaded', () => {    
+
+        backButton.addEventListener('click', (event) => {
+            event.preventDefault(); // Ngăn không cho link điều hướng tự động
+            showOverlay();
+            showBackModal();
+        });
+
+        //bật tắt mờ
+        function showOverlay() {
+            overlay.style.display = 'block';
+        }
+
+        function hideOverlay() {
+            overlay.style.display = 'none';
+        }
+
+        //bật tắt hộp thoại xác nhận hủy
+        function showBackModal() {
+            backModal.style.display = 'block';
+        }
+
+        function hideBackModal() {
+            backModal.style.display = 'none';
+        }
+
+        // xử lý nút hộp thoại hủy
+        document.getElementById('confirmBackBtn').addEventListener('click', () => {
+            // Xử lý khi người dùng xác nhận quay lại
+            window.location.href = 'paymentmethod';
+        });
+
+        document.getElementById('cancelBackBtn').addEventListener('click', () => {
+            hideBackModal();
+            hideOverlay();
+        });
+
+        document.getElementById('closeBackBtn').addEventListener('click', () => {
+            hideBackModal();
+            hideOverlay();
+        });
+
+        document.getElementById('closeBackModal').addEventListener('click', () => {
+            hideBackModal();
+            hideOverlay();
+        });
+
+        
+    });
+</script>
+@endsection
+
