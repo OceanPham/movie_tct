@@ -22,7 +22,7 @@
                     <button class="col-md-7 d-flex align-items-center "  onclick="window.location.href = 'bank';">
                         <img class="paymentmethod_img_atm" src="{{ asset('image/ATM.png') }}" alt=""> Thẻ nội địa
                     </button>
-                    <button class="col-md-7 d-flex align-items-center">
+                    <button class="col-md-7 d-flex align-items-center" onclick="window.location.href = 'vnpay';">
                         <img class="paymentmethod_img_vnpay" src="{{ asset('image/VNPAY.png') }}" alt=""> VNPAY
                     </button>
                 </div>

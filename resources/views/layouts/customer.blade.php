@@ -28,6 +28,10 @@
     <link href="{{ asset('asset/css/bank.css') }}" rel="stylesheet" />
     <link href="{{ asset('asset/css/media-screen.css') }}" rel="stylesheet" />
     <link href="{{ asset('asset/css/user-index.css') }}" rel="stylesheet" />
+    <link href="{{ asset('asset/css/vnpay.css') }}" rel="stylesheet" />
+    <link href="{{ asset('asset/css/success.css') }}" rel="stylesheet" />
+
+
     @yield('link')
 </head>
 
