@@ -65,7 +65,7 @@
                 <div class="row mb-3"> <!-- Added mb-3 class -->
                     <div class="col-4 custom-col-4">
                         <div class="font-bold">Ghế:</div>
-                        <div class="font-bold" style ="color: black;">D7, D8</div>
+                        <div class="font-bold" style ="color: black;">D7</div>
                     </div>
                     <div class="col-8 custom-col-8 text-end">
                         <div class="font-bold">90,000đ</div>
