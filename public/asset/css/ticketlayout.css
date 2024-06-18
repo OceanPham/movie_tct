@@ -1,0 +1,111 @@
+.modal-dialog {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%; /* Chiều rộng 100% của body */
+    height: 100%; /* Chiều cao 100% của body */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-content {
+    border-radius: 5px;
+    padding: 20px;
+    background: white;
+    max-width: 1200px;
+}
+.date-btn {
+    border: 2px solid #dcdbdb;
+    border-radius: 5px;
+    background-color: white;
+    color: #ff4891;
+    padding: 0px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.date-btn.active {
+    background-color: #EEEDED;
+    color: black;
+    border: 0px;
+    margin: 0px;
+    padding: 0px 20px;
+    border-radius: 0px;
+}
+
+.date-btn.current{
+    color: #fff;
+    border-color: #ff4891;
+}
+
+
+.date-btn.active.current{
+    background-color: #ff4891;
+    color: #fff;
+    border-color: #ff4891;
+}
+
+.day-current{
+    color: #ff4891;
+}
+
+.time-btn {
+    background-color: #fff;
+    color: black;
+    /* color: black; */
+    padding: 0px;
+    margin: 5px;
+    min-width: 120px;
+    text-align: center;
+}
+
+.btn.time-btn.active{
+    border-color: #ff4891;
+}
+
+.scrolling-wrapper {
+    overflow-x: auto; /* Cho phép cuộn ngang khi cần thiết */
+    white-space: nowrap; /* Ngăn không cho chữ bị ngắt  */
+    padding-bottom: 10px; /* Khoảng cách từ thanh cuộn */
+    scrollbar-width: none; /* Ẩn thanh cuộn cho Firefox */
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+    display: none; /* Ẩn thanh cuộn cho Chrome, Safari, Opera */
+}
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: none; /* Remove default border */
+}
+.horizontal-line {
+    display: block;
+    width: 100%; /* Chiều rộng 100% của thẻ span */
+    height: 1px; /* Độ dày của đường kẻ ngang */
+    background-color: #ccc; /* Màu sắc của đường kẻ ngang */
+    margin: 10px 0; /* Khoảng cách từ trên và dưới đường kẻ ngang */
+}
+
+.btn.time-btn.active:hover{
+    background-color: #ff4891;
+    color: #fff;
+    padding: 0px;
+    margin: 5px;
+    min-width: 120px;
+    text-align: center;
+}
+
+.date-btn.active:active{
+    background-color: #ff4891;
+    color: #fff;
+    border: 0px;
+    margin: 0px;
+    padding: 0px 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.date-btn::before{
+    border: #ff4891;
+}
+

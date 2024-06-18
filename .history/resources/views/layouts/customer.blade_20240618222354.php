@@ -14,7 +14,7 @@
     <meta name="format-detection" content="telephone=no" />
     <base href="" />
     <meta name="google-site-verification" content="" />
-    <title>TCT Cinema - Biểu đồ chỗ ngồi và thông tin phim</title>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -26,12 +26,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa Slab One:wght@400&display=swap" />
     <link href="{{ asset('asset/css/layout.css') }}" rel="stylesheet" />
     <link href="{{ asset('asset/css/main.css') }}" rel="stylesheet" />
-    <link href="{{ asset('asset/css/global.css') }}" rel="stylesheet" />
-    <link href="{{ asset('asset/css/dialog.css') }}" rel="stylesheet" />
     <link href="{{ asset('asset/css/media-screen.css') }}" rel="stylesheet" />
     <link href="{{ asset('asset/css/user-index.css') }}" rel="stylesheet" />
-    <link rel="stylesheet" href="{{ asset('asset/css/seatOrder.css') }}">
-    <link rel="stylesheet" href="{{ asset('asset/css/food.css') }}">
     @yield('link')
 </head>
 
@@ -120,10 +116,6 @@
         setInterval(function() {
             carousel.next();
         }, 4000);
-    </script>
-
-    <script>
-        document.getElementById("movieNotFoundDialog").show();
     </script>
 
 
