@@ -1,0 +1,72 @@
+.bank-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 410px; /* Đặt chiều cao cố định */
+    overflow-y: auto; /* Thêm thanh cuộn dọc */
+    padding: 0 10px 10px 0; /* Thêm padding để không bị cắt góc */
+    scrollbar-width: thin;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.bank {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 3px 10px 17px 10px; /* Thêm khoảng cách đều 4 phía */
+    max-width: calc(25% - 20px);/* 4 ngân hàng mỗi hàng, trừ đi tổng khoảng cách giữa các ngân hàng */
+    box-sizing: border-box;
+    text-align: center;
+    
+
+    transition: all 0.3s ease;
+}
+.bank:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+.bank img {
+    max-width: 100%;
+    height: auto;
+}
+.paymentmethod_container .link{
+    margin-bottom: 30px;
+}
+.bank_box_card .card {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-color: black;
+}
+.bank_box_card .card_bank{
+    height: 528px;
+    margin-bottom: 60px;
+}
+.bank_box_card h4{
+    margin-top: 20px;
+}
+.search-bank{
+    padding: 0 10px 0 10px;
+    margin: 20px 0px 0px 0px;
+}
+.search-bank span{
+    border-right: none;
+    padding-left: 30px;
+    border-radius: 10px;
+    background-color: white;
+}
+.search-bank span i{
+    color: #989898;
+}
+.search-bank input {
+    border-left: none;
+    background-color: white;
+    padding-left: 0;
+    outline: none; 
+    height: 50px;
+    border-radius: 10px;
+}
+.search-bank input:focus{
+    box-shadow: none; /* Loại bỏ hiệu ứng bóng đổ khi focus */
+    border-color: #ced4da;
+    background-color: white; /* Giữ nguyên màu nền */
+}
+

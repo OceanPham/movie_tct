@@ -30,8 +30,6 @@
     <link href="{{ asset('asset/css/paymentmethod.css') }}" rel="stylesheet" />
     <link href="{{ asset('asset/css/cardinformation.css') }}" rel="stylesheet" />
     <link href="{{ asset('asset/css/bank.css') }}" rel="stylesheet" />
-    <link href="{{ asset('asset/css/global.css') }}" rel="stylesheet" />
-    <link href="{{ asset('asset/css/dialog.css') }}" rel="stylesheet" />
     <link href="{{ asset('asset/css/media-screen.css') }}" rel="stylesheet" />
     <link href="{{ asset('asset/css/user-index.css') }}" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('asset/css/seatOrder.css') }}">

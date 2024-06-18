@@ -26,12 +26,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa Slab One:wght@400&display=swap" />
     <link href="{{ asset('asset/css/layout.css') }}" rel="stylesheet" />
     <link href="{{ asset('asset/css/main.css') }}" rel="stylesheet" />
-    <link href="{{ asset('asset/css/rule.css') }}" rel="stylesheet" />
-    <link href="{{ asset('asset/css/paymentmethod.css') }}" rel="stylesheet" />
-    <link href="{{ asset('asset/css/cardinformation.css') }}" rel="stylesheet" />
-    <link href="{{ asset('asset/css/bank.css') }}" rel="stylesheet" />
-    <link href="{{ asset('asset/css/global.css') }}" rel="stylesheet" />
-    <link href="{{ asset('asset/css/dialog.css') }}" rel="stylesheet" />
     <link href="{{ asset('asset/css/media-screen.css') }}" rel="stylesheet" />
     <link href="{{ asset('asset/css/user-index.css') }}" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('asset/css/seatOrder.css') }}">
