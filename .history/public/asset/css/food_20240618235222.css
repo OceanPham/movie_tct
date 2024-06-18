@@ -1,0 +1,181 @@
+.food-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto; /* Tự động điều chỉnh chiều cao dựa trên nội dung */
+    gap: 10px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.food-div .food-combo {
+    display: flex;
+    max-width: 550px;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box; /* Đảm bảo padding được tính vào kích thước tổng */
+}
+
+.food-combo .img-combo {
+    border-radius: 10px;
+    width: 288px;
+    height: 200px;
+    margin-right: 15px;
+    overflow: hidden; /* Đảm bảo ảnh không vượt quá khung */
+    flex-shrink: 0; /* Đảm bảo khung ảnh không bị co lại */
+    display: flex; /* Để dùng flex alignment */
+    align-items: center; /* Căn giữa ảnh theo chiều dọc bên trong khung */
+    justify-content: center; /* Căn giữa ảnh theo chiều ngang bên trong khung */
+}
+
+.img-combo img {
+    width: 100%; /* Đảm bảo ảnh bao phủ toàn bộ chiều rộng khung */
+    height: 100%; /* Đảm bảo ảnh bao phủ toàn bộ chiều cao khung */
+    object-fit: cover; /* Bao phủ toàn bộ khung mà không bị biến dạng */
+}
+
+.food-details {
+    display: flex;
+    flex-direction: column; /* Căn các phần tử theo chiều dọc */
+    justify-content: flex-start; /* Bắt đầu từ trên cùng */
+    flex-grow: 1; /* Để chiếm không gian còn lại */
+}
+
+.food-details .combo-title {
+    font-weight: 600;
+    color: #D64284;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.food-details .food-name {
+    font-size: 17px;
+    line-height: 1.25;
+}
+
+.combo-count {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.count {
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid #D64284;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: #D64284;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.combo-decrease{
+    color: #E7E5E5;
+    border-color: #E7E5E5;
+}
+
+.count-number {
+    margin: 0 15px;
+    border: 1px solid #B2B2B2;
+    text-align: center;
+    line-height: 22px;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(88, 87, 87, 0.5);
+
+}
+
+#confirmModal{
+    max-width: fit-content;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 1001;
+    scrollbar-width: none;
+}
+
+#modal-content-confirmTicket{
+    width: 600px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+#header-modal-confirmTicket{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.span-modal{
+    width: 560px;
+    height: 1px;
+    background: #D9D9D9;
+    margin: 10px 0px !important;
+}
+
+.information-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    line-height: 0.6;
+}
+
+.information-grid div{
+    width: 350px;
+}
+
+.inforr{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inforr,
+.infor-seat{
+    line-height: 0.4;
+}
+
+.infor-title-thuong{
+    font-size: 13px;
+    color: #9EA1A7;
+    font-weight: 600;
+    margin-top: 20px !important;
+}
+
+.infor-temp,
+.infor-pay{
+    margin-top: 20px !important;
+}
+
+.infor-auth{
+    font-size: 17px;
+    color: black;
+    margin-top: 15px !important;
+    font-weight: 600;
+}
+
+#btn_toPay{
+    width: 560px;
+    background-color: #D64284;
+    height: 40px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-top: 10px;
+    line-height: 40px;
+    text-align: center;
+}
