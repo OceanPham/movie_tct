@@ -96,7 +96,7 @@
 }
 .box_right button:hover{
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    transform: translateY(-3px);
+    transform: scale(1.05);
 }
 
 /* Phông mờ */
@@ -178,7 +178,8 @@
     transition: all 0.3s ease;
 }
 .modal-buttons button:hover{
-    transform: translateY(-5px);
+    transform: scale(1.065);
+    
 }
 #confirmBtn,#cancelBackBtn{
     background-color: #E53282;

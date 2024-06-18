@@ -22,7 +22,7 @@
 }
 .bank:hover {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    transform: translateY(-3px);
+    transform: scale(1.05);
 }
 .bank img {
     max-width: 100%;

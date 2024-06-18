@@ -38,7 +38,7 @@
     height: 80px;
     width: 80px;
     margin-right: 70px; 
-    margin-bottom: 3px;
+    margin-top: -1px;
 }
 .paymentmethod_box_card button {
     background-color: #E7E5E5;
@@ -52,6 +52,5 @@
     background-color: #D53282;
     color: white;
     font-weight: bold;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    transform: translateY(-3px);
+    transform: scale(1.045);
 }

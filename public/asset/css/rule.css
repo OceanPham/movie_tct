@@ -81,7 +81,7 @@
 .rule-btn-1:hover {
     background-color: #D53282;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    transform: translateY(-3px);
+    transform: scale(1.005);
 }
 .rule-btn-2{
     border-radius: 17px;
@@ -96,6 +96,6 @@
 .rule-btn-2:hover {
     background-color: #ECECEE;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    transform: translateY(-3px);
+    transform: scale(1.005);
 }
 
