@@ -1,0 +1,55 @@
+
+
+.line-separator {
+    height: 1px;
+    background-color: black;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-left: 155px;
+    margin-right: 155px;
+}
+
+.tick {
+    margin-left: 290px;
+    padding-bottom: 10px;
+    margin-top: -20px;
+}
+
+.quaylai {
+    margin-bottom: 50px !important;
+
+}
+
+.custom-col-4 {
+    font-weight: bold;
+    color: gray;
+}
+
+.custom-col-8 {
+    font-weight: bold;
+    color: black;
+}
+
+.thank {
+    font-size: 22px;
+    padding-top: 7px;
+}
+
+.wrap {
+    width: 120%; /* Adjust the width as needed to make it smaller */
+    margin-left: -55px;
+    border-radius: 20px!important;
+}
+
+.gap-5 {
+    gap: 50px; /* Set gap between items to 10px */
+}
+
+.mb-3 {
+    margin-bottom: 30px; /* Set margin bottom to 10px */
+}
+
+.hehe {
+    font-size: 20px;
+    padding-top: 20px;
+}

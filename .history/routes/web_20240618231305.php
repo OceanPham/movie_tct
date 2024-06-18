@@ -29,8 +29,6 @@ Route::resource('/', MovieController::class);
 Route::resource('rule', RuleController::class);
 Route::resource('paymentmethod', PaymentmethodController::class);
 Route::resource('bank', BankController::class);
-Route::get('/vnpay', [VnpayController::class, 'index'])->name('vnpay.index');
-Route::get('/success', [SuccessController::class, 'index'])->name('vnpay.index');
 Route::get('/cardinformation', [BankController::class, 'cardInformation'])->name('pay.cardinformation');
 Route::get('/showtime', function () {
     return view('ticketLayouts.showtime');

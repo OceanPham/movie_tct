@@ -199,7 +199,7 @@
         // xử lý nút hộp thoại xác nhận thanh toán
         confirmBtn.addEventListener('click', () => {
             // Xử lý khi người dùng xác nhận
-            // window.location.href = '/your-confirmation-url'; // Thay đổi URL thành trang cần chuyển hướng
+            window.location.href = 'success'; 
         });
 
         cancelBtn.addEventListener('click', () => {

@@ -34,10 +34,7 @@
     <link href="{{ asset('asset/css/dialog.css') }}" rel="stylesheet" />
     <link href="{{ asset('asset/css/media-screen.css') }}" rel="stylesheet" />
     <link href="{{ asset('asset/css/user-index.css') }}" rel="stylesheet" />
-    <link rel="stylesheet" href="{{ asset('asset/css/seatOrder.css') }}">
-    <link rel="stylesheet" href="{{ asset('asset/css/food.css') }}">
-    <link href="{{ asset('asset/css/vnpay.css') }}" rel="stylesheet" />
-    <link href="{{ asset('asset/css/success.css') }}" rel="stylesheet" />
+    
     @yield('link')
 </head>
 
