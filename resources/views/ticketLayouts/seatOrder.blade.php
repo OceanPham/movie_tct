@@ -3,7 +3,7 @@
 @section('main')
 <div class="seating-chart">
     <nav class="nav-ticket">
-        <p class="p-ticket"> <a class="a-ticket" href="{{ route('movie.index') }}">Trang chủ</a> > <a class="a-ticket" href="#">Lịch chiếu</a> > <a class="a-ticket" href="#">Đặt vé Online</a> </p>
+        <p class="p-ticket"> <a class="a-ticket" href="{{ route('movie.index') }}">Trang chủ</a> > <a class="a-ticket" href="{{ route('showtime') }}">Lịch chiếu</a> > <a class="a-ticket" href="#">Đặt vé Online</a> </p>
     </nav>
     <div class="monitor">
         <div class="span-monitor"></div>
@@ -170,15 +170,15 @@
 <div class="overlay" id="overlay"></div>
 <!-- Modal cho xác nhận hủy giao dịch -->
 <div class="modal" id="backModal">
-    <div class="modal-content">
+    <div class="modal-content" id="Cuong-modal-content2">
         <div class="header-modal">
-            <h4>Xác nhận</h4>
-            <i class="bi bi-x-circle" id="closeBackModal"></i>
+            <h4 class="Cuong-h4">Xác nhận</h4>
+            <i class="fa-regular fa-circle-xmark" id="closeBackModal"></i>
         </div>
         
         <div class="content d-flex align-items-center">
             <i class="bi bi-question-circle-fill"></i>
-            <p>Bạn xác nhận hủy đặt vé?</p>
+            <p class="Cuong-p-xacnhan">Bạn xác nhận hủy bỏ phiên giao dịch này ?</p>
         </div>
         
         <div class="modal-buttons">

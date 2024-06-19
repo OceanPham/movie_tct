@@ -85,9 +85,9 @@
 <!-- Modal cho xác nhận vé trước thanh toán-->
 <div class="modal" id="confirmModal">
     <div class="modal-content" id="modal-content-confirmTicket">
-        <div class="header-modal" id="header-modal-confirmTicket">
+        <div id="header-modal-confirmTicket">
             <h4>Doraemon: Nobita và bản giao hưởng địa cầu</h4>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="closeModal"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="closeModal-thuong"></button>
         </div>
         <div class="span-modal"></div>
         <div class="information">

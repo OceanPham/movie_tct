@@ -45,7 +45,7 @@
         <div class="name_movie text-center fw-bold mb-2">
             <p>{{ $movie->name }}</p>
         </div>
-        <button class="btn_buy">
+        <button class="btn_buy"  onclick="window.location.href = 'showtime';">
             <img class="button_buy" src="{{ asset('image/btn_buy.png') }}" alt="{{ $movie->name }}">
         </button>
     </div>
@@ -64,7 +64,7 @@
         <div class="name_movie text-center fw-bold mb-2">
             <p>{{ $movie->name }}</p>
         </div>
-        <button class="btn_buy">
+        <button class="btn_buy"  onclick="window.location.href = 'showtime';">
             <img class="button_buy" src="{{ asset('image/btn_buy.png') }}" alt="{{ $movie->name }}">
         </button>
     </div>

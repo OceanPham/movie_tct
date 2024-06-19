@@ -85,6 +85,7 @@
     @yield('banner')
 
     @yield('main')
+    @yield('scripts')
 
 
     <footer class="footer">

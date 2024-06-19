@@ -67,15 +67,15 @@
 
 <!-- Modal cho xác nhận thanh toán -->
 <div class="modal  " id="modal">
-    <div class="modal-content">
+    <div class="modal-content" id="Cuong-modal-content1">
         <div class="header-modal ">
-            <h4>Xác nhận</h4>
-            <i id="xBtn" class="bi bi-x-circle"></i>
+            <h4 class="Cuong-h4">Xác nhận</h4>
+            <i id="xBtn" class="fa-regular fa-circle-xmark"></i>
         </div>
         
         <div class="content d-flex align-items-center">
             <i class="bi bi-question-circle-fill"></i>
-            <p>Bạn xác nhận thanh toán đặt vé ?</p>
+            <p class="Cuong-p-xacnhan">Bạn xác nhận thanh toán đặt vé ?</p>
         </div>
         
         <div class="modal-buttons">
@@ -88,15 +88,15 @@
 
 <!-- Modal cho xác nhận hủy giao dịch -->
 <div class="modal" id="backModal">
-    <div class="modal-content">
+    <div class="modal-content" id="Cuong-modal-content2">
         <div class="header-modal">
-            <h4>Xác nhận</h4>
-            <i class="bi bi-x-circle" id="closeBackModal"></i>
+            <h4 class="Cuong-h4">Xác nhận</h4>
+            <i class="fa-regular fa-circle-xmark" id="closeBackModal"></i>
         </div>
         
         <div class="content d-flex align-items-center">
             <i class="bi bi-question-circle-fill"></i>
-            <p>Bạn xác nhận hủy bỏ phiên giao dịch này ?</p>
+            <p class="Cuong-p-xacnhan">Bạn xác nhận hủy bỏ phiên giao dịch này ?</p>
         </div>
         
         <div class="modal-buttons">

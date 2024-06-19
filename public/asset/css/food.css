@@ -99,7 +99,7 @@
 #confirmModal{
     max-width: fit-content;
     position: fixed;
-    top: 35%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
@@ -124,7 +124,7 @@
     width: 560px;
     height: 1px;
     background: #D9D9D9;
-    margin: 20px 0px !important;
+    margin: 10px 0px;
 }
 
 .information-grid{
@@ -152,18 +152,17 @@
     font-size: 13px;
     color: #9EA1A7;
     font-weight: 600;
-    margin-top: 20px !important;
+    margin-top: 15px;
 }
 
 .infor-temp,
 .infor-pay{
-    margin-top: 20px !important;
+    margin-top: 15px;
 }
 
 .infor-auth{
     font-size: 17px;
     color: black;
-    margin-top: 15px !important;
     font-weight: 600;
 }
 
@@ -175,14 +174,11 @@
     font-size: 17px;
     font-weight: 600;
     border-radius: 6px;
-    margin-top: 40px;
+    margin-top: 10px;
     line-height: 40px;
     text-align: center;
 }
 
-.btn-close{
-    margin-top: -30px;
-}
-.btn-close:hover{
-    color: #D64284 !important;
+#closeModal-thuong:hover{
+    color: #D64284;
 }

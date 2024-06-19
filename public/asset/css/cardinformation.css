@@ -122,14 +122,15 @@
     border-radius: 5px;
     z-index: 1001;
 }
-.modal-content{
+#Cuong-modal-content1,
+#Cuong-modal-content2{
     width: 420px;
     margin: 200px auto 0 auto;
     padding: 20px;
     border-radius: 12px;
-    border-color: #E53282;;
+    border-color: #E53282;
 }
-.modal h4 {
+.Cuong-h4{
     margin: 0 0 20px 0;
 }
 .modal-content .content i{
@@ -155,7 +156,7 @@
     color: #E53282;
 }
 
-.modal-content p{
+.Cuong-p-xacnhan{
     margin: 0;
     font-size: 17px
 }
