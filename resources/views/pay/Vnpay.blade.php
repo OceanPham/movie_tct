@@ -24,7 +24,7 @@
                     <p class="p1">Mã đơn hàng :</p>
                     <p class="p2">DH01</p>
                     <p class="p3">Số tiền thanh toán :</p>
-                    <p class="p4">340,000 VND</p>
+                    <p class="p4">295,000 VND</p>
                     <p class="p5">Đơn vị chấp nhận thanh toán :</p>
                     <p class="p6">Rạp chiếu phim TCT</p>
                 </div>
