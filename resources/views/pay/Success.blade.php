@@ -68,7 +68,7 @@
                         <div class="font-bold" style ="color: black;">D7</div>
                     </div>
                     <div class="col-8 custom-col-8 text-end">
-                        <div class="font-bold">90,000đ</div>
+                        <div class="font-bold">45,000đ</div>
                     </div>
                 </div>
                 <div class="row mb-3"> <!-- Added mb-3 class -->
@@ -87,7 +87,7 @@
                     <div class="font-bold">Thành tiền:</div>
                 </div>
                 <div class="col-8 custom-col-8 text-end">
-                    <div class="font-bold">340,000đ</div>
+                    <div class="font-bold">295,000đ</div>
                 </div>
             </div>
         </div>
