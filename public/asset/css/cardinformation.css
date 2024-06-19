@@ -1,5 +1,5 @@
 .carinformation_row1{
-    margin: 30px 50px 30px 50px;
+    margin: 30px 50px 30px 110px;
 }
 .cardinformation_icon_back{
     margin: 0 !important;
@@ -7,6 +7,7 @@
 .cardinformation_logo_bank{
     width: 153px;
     height: 64px;
+    margin-left: 50px;
 }
 .information_card{
     margin-bottom: 60px;
@@ -123,7 +124,8 @@
     z-index: 1001;
 }
 #Cuong-modal-content1,
-#Cuong-modal-content2{
+#Cuong-modal-content2,
+#Cuong-modal-content3{
     width: 420px;
     margin: 200px auto 0 auto;
     padding: 20px;

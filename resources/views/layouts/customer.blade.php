@@ -14,7 +14,7 @@
     <title>TCT Cinema - Biểu đồ chỗ ngồi và thông tin phim</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" />
@@ -86,8 +86,6 @@
 
     @yield('main')
     @yield('scripts')
-
-
     <footer class="footer">
         <div class="footer_infor d-flex justify-content-between">
             <div class="chm-sc-khch-hng-parent">
@@ -116,41 +114,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="{{ asset('asset/js/app.js') }}"></script>
-    <script>
-        var myCarousel = document.getElementById('carouselExample');
-        var carousel = new bootstrap.Carousel(myCarousel);
-        setInterval(function() {
-            carousel.next();
-        }, 4000);
-
-        document.addEventListener('DOMContentLoaded', (event) => {
-            var btnCancel = document.getElementById('btn_cancel');
-            var iconCancel = document.getElementById('vectorIcon');
-            var overlay = document.getElementById('overlay');
-            var notification = document.getElementById('notification');
-
-            function hideDialog() {
-                notification.classList.add('hidden');
-                overlay.classList.add('hidden-overlay');
-            }
-
-            function showDialog() {
-                notification.classList.remove('hidden');
-                overlay.classList.remove('hidden-overlay');
-            }
-
-            btnCancel.addEventListener('click', function() {
-                hideDialog();
-            });
-
-            iconCancel.addEventListener('click', function() {
-                hideDialog();
-            });
-
-            showDialog();
-        });
-    </script>
+    <script src="{{ asset('asset/js/app.js') }}" ></script>
 </body>
 
 </html>

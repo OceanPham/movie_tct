@@ -10,7 +10,7 @@
             <img src="{{ asset('image/back.png') }}" alt="Back" class="mr-2">
             Quay lại
         </a>
-        <div class="col-md-7"></div> 
+        <div class="col-md-7"></div>
         <img class="cardinformation_logo_bank col-md-2" src="{{ asset($bank['image']) }}" alt="{{ $bank['name'] }}">
     </div>
 
@@ -22,12 +22,12 @@
                 <p class="p1">Mã đơn hàng :</p>
                 <p class="p2">DH01</p>
                 <p class="p3">Số tiền thanh toán :</p>
-                <p class="p4">340,000 VND</p>
+                <p class="p4">295,000 VND</p>
                 <p class="p5">Đơn vị chấp nhận thanh toán :</p>
                 <p class="p6">Rạp chiếu phim TCT</p>
             </div>
         </div>
-      
+
         <div class="column col-6 box_right">
             <h4 class="text-uppercase text-center">Thanh toán qua ngân hàng {{ $bank['name'] }}</h4>
             <div class="line"></div>
@@ -51,7 +51,7 @@
                 <div class="form-group g3">
                     <label for="month_year" class="form-label">Tháng / năm phát hành :</label>
                     <div class="input-group">
-                    <input type="text" id="month_year" name="month_year" class="form-control" placeholder="12/2023">
+                        <input type="text" id="month_year" name="month_year" class="form-control" placeholder="12/2023">
                         <span class="input-group-text"><i class="bi bi-exclamation-circle"></i></span>
                     </div>
                     <p class="form-message" id="month_year_error"></p>
@@ -72,12 +72,16 @@
             <h4 class="Cuong-h4">Xác nhận</h4>
             <i id="xBtn" class="fa-regular fa-circle-xmark"></i>
         </div>
-        
+
         <div class="content d-flex align-items-center">
-        <img src="{{ asset('image/dauhoi.png') }}" alt="">
+            <!-- <i class="fa-regular fa-circle-xmark" id="closeBackModal"></i> -->
+            <!-- <i class="fas fa-question"></i> -->
+            <!-- <i class="fa-solid fa-question"></i> -->
+            <!-- <i class="fa-regular fa-question"></i> -->
+            <i class="bi bi-question-circle-fill"></i>
             <p class="Cuong-p-xacnhan">Bạn xác nhận thanh toán đặt vé ?</p>
         </div>
-        
+
         <div class="modal-buttons">
             <button id="confirmBtn">Xác nhận</button>
             <button id="cancelBtn">Hủy</button>
@@ -93,12 +97,12 @@
             <h4 class="Cuong-h4">Xác nhận</h4>
             <i class="fa-regular fa-circle-xmark" id="closeBackModal"></i>
         </div>
-        
+
         <div class="content d-flex align-items-center">
-            <img src="{{ asset('image/dauhoi.png') }}" alt="">
+        <i class="bi bi-question-circle-fill"></i>
             <p class="Cuong-p-xacnhan">Bạn xác nhận hủy bỏ phiên giao dịch này ?</p>
         </div>
-        
+
         <div class="modal-buttons">
             <button id="cancelBackBtn">Hủy</button>
             <button id="confirmBackBtn">Xác nhận</button>
@@ -129,48 +133,48 @@
 
             let isValid = true;
 
-    // Kiểm tra trường Số thẻ
-    const numberCard = document.getElementById('number_card').value.trim();
-    if (numberCard === '') {
-        showError('number_card', 'Vui lòng nhập đầy đủ thông tin');
-        isValid = false;
-    } else if (!/^[0-9]{1,20}$/.test(numberCard)) {
-        showError('number_card', 'Số thẻ không hợp lệ');
-        isValid = false;
-    }
+            // Kiểm tra trường Số thẻ
+            const numberCard = document.getElementById('number_card').value.trim();
+            if (numberCard === '') {
+                showError('number_card', 'Số thẻ không được để trống.');
+                isValid = false;
+            } else if (!/^[0-9]{1,20}$/.test(numberCard)) {
+                showError('number_card', 'Số thẻ phải là các số và không được lớn hơn 20 số.');
+                isValid = false;
+            }
 
-    // Kiểm tra trường Tên chủ thẻ
-    const accountName = document.getElementById('account_name').value.trim();
-    if (accountName === '') {
-        showError('account_name', 'Vui lòng nhập đầy đủ thông tin');
-        isValid = false;
-    } else if (/[^a-zA-Z\u00C0-\u1EF9\s]/.test(accountName)) {
-        showError('account_name', 'Tên chủ thẻ không được chứa ký tự số hoặc ký tự đặc biệt');
-        isValid = false;
-    } else if (!isValidAccountNameFormat(accountName)) {
-        showError('account_name', 'Tên chủ thẻ phải gồm các từ viết hoa không dấu');
-        isValid = false;
-    }
+            // Kiểm tra trường Tên chủ thẻ
+            const accountName = document.getElementById('account_name').value.trim();
+            if (accountName === '') {
+                showError('account_name', 'Tên chủ thẻ không được để trống.');
+                isValid = false;
+            } else if (/[^a-zA-Z\u00C0-\u1EF9\s]/.test(accountName)) {
+                showError('account_name', 'Tên chủ thẻ không được chứa ký tự số hoặc ký tự đặc biệt.');
+                isValid = false;
+            } else if (!isValidAccountNameFormat(accountName)) {
+                showError('account_name', 'Tên chủ thẻ phải gồm các từ viết hoa không dấu.');
+                isValid = false;
+            }
 
-    // Kiểm tra trường Tháng / năm phát hành
-    const monthYear = document.getElementById('month_year').value.trim();
-    if (monthYear === '') {
-        showError('month_year', 'Vui lòng nhập đầy đủ thông tin');
-        isValid = false;
-    } else if (!isValidMonthYearFormat(monthYear)) {
-        showError('month_year', 'Tháng / năm phát hành không đúng định dạng');
-        isValid = false;
-    } else if (isFutureMonthYear(monthYear)) {
-        showError('month_year', 'Tháng / năm phát hành không được lớn hơn tháng / năm hiện tại');
-        isValid = false;
-    }
+            // Kiểm tra trường Tháng / năm phát hành
+            const monthYear = document.getElementById('month_year').value.trim();
+            if (monthYear === '') {
+                showError('month_year', 'Tháng / năm phát hành không được để trống.');
+                isValid = false;
+            } else if (!isValidMonthYearFormat(monthYear)) {
+                showError('month_year', 'Tháng / năm phát hành không đúng định dạng.');
+                isValid = false;
+            } else if (isFutureMonthYear(monthYear)) {
+                showError('month_year', 'Tháng / năm phát hành không được lớn hơn tháng / năm hiện tại.');
+                isValid = false;
+            }
 
-    // Nếu các điều kiện đều hợp lệ, submit form
-    if (isValid) {
-        showOverlay();
-        showModal();
-    }
-}
+            // Nếu các điều kiện đều hợp lệ, submit form
+            if (isValid) {
+                showOverlay();
+                showModal();
+            }
+        }
         //bật tắt mờ
         function showOverlay() {
             overlay.style.display = 'block';
@@ -199,7 +203,7 @@
         // xử lý nút hộp thoại xác nhận thanh toán
         confirmBtn.addEventListener('click', () => {
             // Xử lý khi người dùng xác nhận
-            window.location.href = 'success'; 
+            window.location.href = 'success';
         });
 
         cancelBtn.addEventListener('click', () => {
@@ -250,12 +254,12 @@
         function clearErrors() {
             const errorMessages = document.querySelectorAll('.form-message');
             errorMessages.forEach(error => {
-            error.textContent = '';
-            error.style.display = 'none';
+                error.textContent = '';
+                error.style.display = 'none';
 
-            // Xóa lớp 'error' cho phần tử form-group
-            const formGroup = error.closest('.form-group');
-            formGroup.classList.remove('error');
+                // Xóa lớp 'error' cho phần tử form-group
+                const formGroup = error.closest('.form-group');
+                formGroup.classList.remove('error');
             });
         }
 
@@ -263,6 +267,7 @@
             const regex = /^[A-ZÀẢÃÁẠĂẰẲẴẮẶÂẦẤẬẨẪĂÐÈÉẸÊỀẾỆỂỄÌÍỊỈỊÒÓỌỎỐỒỔỖỘƠỜỚỢỞỠÙÚỤỦỨỪỬỮỲÝỴỶỸÂĂĐÊÔƠƯ\s]+$/;
             return regex.test(accountName);
         }
+
         function isValidMonthYearFormat(monthYear) {
             const regex = /^(0[1-9]|1[0-2])\/[0-9]{4}$/;
             return regex.test(monthYear);

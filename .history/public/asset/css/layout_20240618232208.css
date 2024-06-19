@@ -160,6 +160,6 @@ header{
     min-width: 100px;
 }
 .custom-link:hover{
-    font-weight: 500;
     color: #EC4F84;
+    font-weight: lighter !important;
 }

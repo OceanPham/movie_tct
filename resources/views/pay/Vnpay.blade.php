@@ -24,7 +24,7 @@
                     <p class="p1">Mã đơn hàng :</p>
                     <p class="p2">DH01</p>
                     <p class="p3">Số tiền thanh toán :</p>
-                    <p class="p4">340,000 VND</p>
+                    <p class="p4">295,000 VND</p>
                     <p class="p5">Đơn vị chấp nhận thanh toán :</p>
                     <p class="p6">Rạp chiếu phim TCT</p>
                 </div>
@@ -39,15 +39,15 @@
 <div class="overlay" id="overlay"></div>
 
 <div class="modal" id="backModal">
-    <div class="modal-content">
+    <div class="modal-content" id="Cuong-modal-content3">
         <div class="header-modal">
-            <h4>Xác nhận</h4>
+            <h4 class="Cuong-h4">Xác nhận</h4>
             <i class="bi bi-x-circle" id="closeBackModal"></i>
         </div>
         
         <div class="content d-flex align-items-center">
             <i class="bi bi-question-circle-fill"></i>
-            <p>Bạn xác nhận hủy bỏ phiên giao dịch này ?</p>
+            <p class="Cuong-p-xacnhan">Bạn xác nhận hủy bỏ phiên giao dịch này ?</p>
         </div>
         
         <div class="modal-buttons">
