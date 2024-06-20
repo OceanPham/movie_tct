@@ -2,7 +2,7 @@
 
 @section('main')
 <nav class="nav-pay">
-    <p class="p-pay"> <a class="a-pay" href="{{ route('movie.index') }}">Trang chủ</a> > <a class="a-pay" href="#">Lịch chiếu</a> > <a class="a-pay" href="#">Đặt vé Online</a> > <a class="a-pay" href="{{ route('rule.index') }}">Thanh toán</a> </p>
+    <p class="p-pay"> <a class="a-pay" href="{{ route('movie.index') }}">Trang chủ</a> > <a class="a-pay" href="#">Lịch chiếu</a> > <a class="a-pay" href="#">Đặt vé Online</a> > <a class="a-pay" href="#">Thanh toán</a> </p>
 </nav>
 <div class="paymentmethod_container container">
     <div class="row carinformation_row1">

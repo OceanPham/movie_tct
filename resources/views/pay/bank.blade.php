@@ -6,7 +6,7 @@
         <a class="a-pay" href="{{ route('movie.index') }}">Trang chủ</a> > 
         <a class="a-pay" href="#">Lịch chiếu</a> > 
         <a class="a-pay" href="#">Đặt vé Online</a> > 
-        <a class="a-pay" href="{{ route('rule.index') }}">Thanh toán</a>
+        <a class="a-pay" href="#">Thanh toán</a>
     </p>
 </nav>
 

@@ -180,7 +180,7 @@
             <i class="bi bi-question-circle-fill"></i>
             <!-- <i class="fa-solid fa-circle-question"></i> -->
 
-            <p class="Cuong-p-xacnhan">Bạn xác nhận hủy bỏ phiên giao dịch này ?</p>
+            <p class="Cuong-p-xacnhan">Bạn xác nhận hủy phiên đặt vé ?</p>
         </div>
         
         <div class="modal-buttons">
