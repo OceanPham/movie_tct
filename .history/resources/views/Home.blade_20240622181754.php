@@ -142,7 +142,7 @@
 </div>
 
 
-<div class="title text-center pt-5 fs-1 fw-bold border-top">
+<div class="title text-center fs-1 fw-bold border-top">
     <p class="title_1">Phim sắp chiếu</p>
 </div>
 <div class="d-flex flex-wrap container">

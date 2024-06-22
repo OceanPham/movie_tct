@@ -45,8 +45,8 @@
   margin: 0px 30px;
 }
 
-.notification_pnhuy {
-  transition: transform 0.3s ease, opacity 0.3s ease !important;
+.overlay_pnhuy {
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .vector-icon, .ok-wrapper {

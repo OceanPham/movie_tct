@@ -3,7 +3,7 @@
 @section('main')
 <div class="seating-chart">
     <nav class="nav-ticket">
-        <p class="p-ticket"> <a class="a-ticket" href="{{ route('movie.index') }}">Trang chủ</a> > <a class="a-ticket" href="#" onclick="window.location.href = 'showtime';">Lịch chiếu</a> > <a class="a-ticket" href="#">Đặt vé Online</a> </p>
+        <p class="p-ticket"> <a class="a-ticket" href="{{ route('movie.index') }}">Trang chủ</a> > <a class="a-ticket" href="#" onclick="window.location.href = 'seat';">Lịch chiếu</a> > <a class="a-ticket" href="#">Đặt vé Online</a> </p>
     </nav>
     <div class="food-div">
         <div class="food-combo">
